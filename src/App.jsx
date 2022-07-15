@@ -1,5 +1,5 @@
 import React from "react";
-import { BrowserRouter, Routers, Route } from "react-router-dom";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { FiSettings } from "react-icons/fi";
 import { TooltipComponent } from "@syncfusion/ej2-react-popups";
 import "./App.css";
@@ -38,6 +38,11 @@ const App = () => {
           <div className={`dark:bg-main-bg bg-main-bg min-h-screen w-full ${activeMenu ? "md:ml-72" : "flex-2"}`}>
             <div className="fixed md:static dark:bg-main-dark-bg bg-main-bg navbar w-full"></div>
           </div>
+        </div>
+        <div>
+          <Routes>
+            <Route path="/" element="ECommerce" />
+          </Routes>
         </div>
       </BrowserRouter>
     </div>
