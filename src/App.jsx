@@ -35,6 +35,9 @@ const App = () => {
           ) : (
             <div className="w-0 dark:bg-secondary-dark-bg">sidebar w-0</div>
           )}
+          <div className={`dark:bg-main-bg bg-main-bg min-h-screen w-full ${activeMenu ? "md:ml-72" : "flex-2"}`}>
+            <div className="fixed md:static dark:bg-main-dark-bg bg-main-bg navbar w-full"></div>
+          </div>
         </div>
       </BrowserRouter>
     </div>
